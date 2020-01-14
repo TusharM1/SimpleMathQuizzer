@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import MathQuizzer.Choices;
 import MathQuizzer.Main;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 
 public class LoadingController {
 
@@ -34,6 +36,17 @@ public class LoadingController {
 	private void divisionAction() {
 		main.switchToQuizScreen();
 		main.quizController.setOperation(Choices.DIVISION);
+	}
+
+	public void onKeyReleased(KeyEvent keyEvent) {
+		if (keyEvent.getCode() == KeyCode.DIGIT1)
+			additionAction();
+		else if (keyEvent.getCode() == KeyCode.DIGIT2)
+			subtractionAction();
+		else if (keyEvent.getCode() == KeyCode.DIGIT3)
+			multiplicationAction();
+		else if (keyEvent.getCode() == KeyCode.DIGIT4)
+			divisionAction();
 	}
 
 }

@@ -4,29 +4,39 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane alignment="center" hgap="10" prefHeight="400.0" prefWidth="400.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MathQuizzer.Loading.LoadingController">
-    <Button fx:id="addition" onAction="#additionAction" text="addition" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="0" GridPane.valignment="BOTTOM">
-      <GridPane.margin>
-         <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
-      </GridPane.margin></Button>
-    <Button fx:id="subtraction" onAction="#subtractionAction" text="subtraction" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="0" GridPane.valignment="BOTTOM">
-      <GridPane.margin>
-         <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
-      </GridPane.margin></Button>
-    <Button fx:id="multiplication" onAction="#multiplicationAction" text="multiplication" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
-      <GridPane.margin>
-         <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
-      </GridPane.margin></Button>
-    <Button fx:id="division" onAction="#divisionAction" text="division" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
-      <GridPane.margin>
-         <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
-      </GridPane.margin></Button>
-   <columnConstraints>
-      <ColumnConstraints percentWidth="50.0" />
-      <ColumnConstraints percentWidth="50.0" />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints percentHeight="50.0" />
-      <RowConstraints percentHeight="50.0" />
-   </rowConstraints>
+<GridPane onKeyReleased="#onKeyReleased" alignment="center" hgap="10" prefHeight="400.0" prefWidth="600.0" vgap="10"
+          xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="MathQuizzer.Loading.LoadingController">
+    <Button fx:id="addition" onAction="#additionAction" text="addition" GridPane.columnIndex="0"
+            GridPane.halignment="RIGHT" GridPane.rowIndex="0" GridPane.valignment="BOTTOM">
+        <GridPane.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button fx:id="subtraction" onAction="#subtractionAction" text="subtraction" GridPane.columnIndex="1"
+            GridPane.halignment="LEFT" GridPane.rowIndex="0" GridPane.valignment="BOTTOM">
+        <GridPane.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button fx:id="multiplication" onAction="#multiplicationAction" text="multiplication" GridPane.columnIndex="0"
+            GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+        <GridPane.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button fx:id="division" onAction="#divisionAction" text="division" GridPane.columnIndex="1"
+            GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+        <GridPane.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+        </GridPane.margin>
+    </Button>
+    <columnConstraints>
+        <ColumnConstraints percentWidth="50.0"/>
+        <ColumnConstraints percentWidth="50.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="50.0"/>
+        <RowConstraints percentHeight="50.0"/>
+    </rowConstraints>
 </GridPane>
